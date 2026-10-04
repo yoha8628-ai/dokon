@@ -1,0 +1,41 @@
+u<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening do'konim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">MeningDo'kon</h2>
+        <span>🛒 Savat: <b id="savat-soni">0</b></span>
+    </header>
+
+    <main class="mahsulotlar">
+        <div class="karta">
+            <div class="rasm">👟</div>
+            <h3>Krossovka</h3>
+            <p class="narx">350 000 so'm</p>
+            <button onclick="savatga('Krossovka', 350000)">Savatga</button>
+        </div>
+        <div class="karta">
+            <div class="rasm">👕</div>
+            <h3>Futbolka</h3>
+            <p class="narx">120 000 so'm</p>
+            <button onclick="savatga('Futbolka', 120000)">Savatga</button>
+        <div class="karta">
+            <div class="rasm">🎒</div>
+            <h3>Ryukzak</h3>
+            <p class="narx">220 000 so'm</p>
+            <button onclick="savatga('Ryukzak', 220000)">Savatga</button>
+        </div>
+    </main>
+<section class="savat">
+    <h2>Savat</h2>
+    <ul id="royxat"></ul>
+    <p>Jami: <b id="jami">0</b> so'm</p>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

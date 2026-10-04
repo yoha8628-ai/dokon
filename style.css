@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: #1d4ed8;
+    color: white;
+}
+.mahsulotlar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 32px;
+}
+.karta {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+.karta:hover { transform: translateY(-6px); }
+.rasm { font-size: 72px; }
+.narx { color: #1d4ed8; font-weight: bold; }
+button {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover { background: #1e40af; }
+.savat {
+    background: white;
+    margin: 0 32px 32px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+@media (max-width: 600px) {
+    header {
+        padding: 12px 16px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .mahsulotlar {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        padding: 16px;
+    }
+    .karta {
+        padding: 16px;
+    }
+    .rasm {
+        font-size: 48px;
+    }
+    .savat {
+        margin: 0 16px 16px;
+        padding: 16px;
+    }
+    button {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+}
